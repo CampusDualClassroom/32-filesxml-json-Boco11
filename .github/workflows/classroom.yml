@@ -22,6 +22,7 @@ jobs:
         setup-command: mvn compile
         command: mvn test
         timeout: 10
+        max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
